@@ -10,7 +10,7 @@ export default function Index() {
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
         <Header title="QR Attendance" />
-        <Text>Developed by: Junrel Terobias</Text>
+        <Text style={styles.devBy}>Developed by: Junrel Terobias</Text>
       </View>
 
       <View style={styles.bodyContainer}>
@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
   headerContainer: { flex: 1, justifyContent: 'center' },
   bodyContainer: { alignItems: 'center', paddingHorizontal: 32, marginBottom: 16 },
   mainTitle: { fontSize: 18, fontWeight: '600', color: COLORS.primary, marginBottom: 6, textAlign: 'center' },
-  subtitle: { fontSize: 14, color: COLORS.textSecondary, textAlign: 'center' },
+  subtitle: { fontSize: 14, color: COLORS.textPrimary, textAlign: 'center' },
   footerContainer: { flex: 1 / 3, alignItems: 'center', paddingHorizontal: 24, width: '100%' },
+  devBy: { color: COLORS.textPrimary, textAlign: 'center', },
 });
