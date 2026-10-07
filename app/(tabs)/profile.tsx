@@ -84,7 +84,7 @@ const handleSaveName = async () => {
         <Text style={styles.valueSmall}>{profile?.id || 'N/A'}</Text>
         {editing ? (
           <View style={styles.nameEditRow}>
-            <TextInput value={draftName} onChangeText={setDraftName} placeholder="Enter your new full name" />
+            <TextInput style={styles.nameInput} value={draftName} onChangeText={setDraftName} placeholder="Enter your new full name" />
             <Pressable onPress={handleSaveName}>
               <Text style={styles.editHint}>Save</Text>
             </Pressable>
@@ -161,6 +161,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  nameInput: {
+    color: COLORS.textPrimary,
   },
   infoRow: {
     flexDirection: 'row',
